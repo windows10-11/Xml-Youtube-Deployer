@@ -1,0 +1,40 @@
+name: Refresh YouTube feed
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: youtube-feed-refresh
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the landing page
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Download XML and build feed data
+        run: python scripts/update_feed.py --config config/feed.json
+
+      - name: Commit updated feed files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data/feed.json public/data/feed.xml public/data/feed-meta.json
+          if git diff --cached --quiet; then
+            echo "No changes to publish."
+          else
+            git commit -m "chore: refresh YouTube feed"
+            git push
+          fi

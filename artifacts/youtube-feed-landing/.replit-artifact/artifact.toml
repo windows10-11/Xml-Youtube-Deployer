@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "YouTube Feed Landing Builder"
+description = "A simple landing page that reads generated YouTube RSS/XML feed data, displays recent videos, and includes Python and GitHub Actions automation for refreshing the feed every six hours."
+version = "1.0.0"
+id = "artifacts/youtube-feed-landing"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18134
+
+[services.development]
+run = "pnpm --filter @workspace/youtube-feed-landing run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/youtube-feed-landing", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/youtube-feed-landing/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18134"
+BASE_PATH = "/"

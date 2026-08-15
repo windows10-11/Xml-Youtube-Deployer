@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-08-16T00:00:00+00:00",
+  "source": {
+    "feed_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC_x5XG1OV2P6uZZ5FSM9Ttw",
+    "channel_id": "UC_x5XG1OV2P6uZZ5FSM9Ttw",
+    "channel_name": "YouTube Feed Preview",
+    "channel_url": "https://www.youtube.com/channel/UC_x5XG1OV2P6uZZ5FSM9Ttw"
+  },
+  "site": {
+    "title": "YouTube Feed Preview",
+    "description": "A living shelf for the latest videos, refreshed automatically every six hours."
+  },
+  "items": [
+    {
+      "id": "aqz-KE-bpKQ",
+      "title": "A new story is ready to watch",
+      "description": "This preview item will be replaced automatically by the next GitHub Actions feed refresh.",
+      "published_at": "2026-08-15T10:00:00+00:00",
+      "updated_at": "2026-08-15T10:00:00+00:00",
+      "url": "https://www.youtube.com/watch?v=aqz-KE-bpKQ",
+      "thumbnail_url": "https://i.ytimg.com/vi/aqz-KE-bpKQ/hqdefault.jpg",
+      "author": "YouTube Feed Preview"
+    },
+    {
+      "id": "M7lc1UVf-VE",
+      "title": "Ideas in motion",
+      "description": "Connect your channel in config/feed.json to replace this sample feed with live XML data.",
+      "published_at": "2026-08-10T10:00:00+00:00",
+      "updated_at": "2026-08-10T10:00:00+00:00",
+      "url": "https://www.youtube.com/watch?v=M7lc1UVf-VE",
+      "thumbnail_url": "https://i.ytimg.com/vi/M7lc1UVf-VE/hqdefault.jpg",
+      "author": "YouTube Feed Preview"
+    },
+    {
+      "id": "ScMzIvxBSi4",
+      "title": "The next chapter starts here",
+      "description": "The landing page reads the generated JSON without needing a database or runtime API.",
+      "published_at": "2026-08-04T10:00:00+00:00",
+      "updated_at": "2026-08-04T10:00:00+00:00",
+      "url": "https://www.youtube.com/watch?v=ScMzIvxBSi4",
+      "thumbnail_url": "https://i.ytimg.com/vi/ScMzIvxBSi4/hqdefault.jpg",
+      "author": "YouTube Feed Preview"
+    }
+  ]
+}

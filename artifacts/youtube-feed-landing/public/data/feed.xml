@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/">
+  <title>YouTube Feed Preview</title>
+  <link rel="alternate" href="https://www.youtube.com/channel/UC_x5XG1OV2P6uZZ5FSM9Ttw"/>
+  <entry>
+    <id>yt:video:aqz-KE-bpKQ</id>
+    <yt:videoId>aqz-KE-bpKQ</yt:videoId>
+    <title>A new story is ready to watch</title>
+    <published>2026-08-15T10:00:00+00:00</published>
+    <updated>2026-08-15T10:00:00+00:00</updated>
+    <author><name>YouTube Feed Preview</name></author>
+    <link rel="alternate" href="https://www.youtube.com/watch?v=aqz-KE-bpKQ"/>
+    <media:group>
+      <media:description>This preview item will be replaced automatically by the next GitHub Actions feed refresh.</media:description>
+      <media:thumbnail url="https://i.ytimg.com/vi/aqz-KE-bpKQ/hqdefault.jpg"/>
+    </media:group>
+  </entry>
+  <entry>
+    <id>yt:video:M7lc1UVf-VE</id>
+    <yt:videoId>M7lc1UVf-VE</yt:videoId>
+    <title>Ideas in motion</title>
+    <published>2026-08-10T10:00:00+00:00</published>
+    <updated>2026-08-10T10:00:00+00:00</updated>
+    <author><name>YouTube Feed Preview</name></author>
+    <link rel="alternate" href="https://www.youtube.com/watch?v=M7lc1UVf-VE"/>
+    <media:group>
+      <media:description>Connect your channel in config/feed.json to replace this sample feed with live XML data.</media:description>
+      <media:thumbnail url="https://i.ytimg.com/vi/M7lc1UVf-VE/hqdefault.jpg"/>
+    </media:group>
+  </entry>
+  <entry>
+    <id>yt:video:ScMzIvxBSi4</id>
+    <yt:videoId>ScMzIvxBSi4</yt:videoId>
+    <title>The next chapter starts here</title>
+    <published>2026-08-04T10:00:00+00:00</published>
+    <updated>2026-08-04T10:00:00+00:00</updated>
+    <author><name>YouTube Feed Preview</name></author>
+    <link rel="alternate" href="https://www.youtube.com/watch?v=ScMzIvxBSi4"/>
+    <media:group>
+      <media:description>The landing page reads the generated JSON without needing a database or runtime API.</media:description>
+      <media:thumbnail url="https://i.ytimg.com/vi/ScMzIvxBSi4/hqdefault.jpg"/>
+    </media:group>
+  </entry>
+</feed>
