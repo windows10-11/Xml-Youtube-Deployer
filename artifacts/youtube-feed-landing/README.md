@@ -35,6 +35,10 @@ bawaan GitHub, jadi token tidak perlu ditulis di source code.
 `/.github/workflows/deploy-pages.yml` membangun website dan menerbitkannya ke
 GitHub Pages setiap ada push ke branch `main`. Di repository GitHub, buka
 **Settings → Pages → Source: GitHub Actions** sekali sebelum deployment pertama.
+Workflow otomatis memakai nama repository sebagai base path, sehingga project
+site seperti `username.github.io/nama-repo/` tetap memuat asset dengan benar.
+Untuk repository user-site bernama `username.github.io`, ubah `BASE_PATH` pada
+workflow menjadi `/`.
 
 ## Deploy mudah dari mesin lokal
 

@@ -140,9 +140,9 @@ function Home() {
   const siteDescription =
     feed?.site.description ||
     'Livefeed turns a YouTube RSS feed into a home that feels edited, alive, and unmistakably yours.';
-  const generatedAt = feed?.generated_at ? new Date(feed.generated_at) : null;
+  const generatedAt = feed ? new Date(feed.generated_at) : null;
   const lastChecked =
-    generatedAt && !Number.isNaN(generatedAt.getTime())
+    feed && generatedAt && !Number.isNaN(generatedAt.getTime())
       ? formatDate(feed.generated_at)
       : 'Preview data';
   const sourceUrl = feed?.source.feed_url || 'youtube.com/feeds/videos.xml';
